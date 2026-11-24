@@ -1,0 +1,171 @@
+/* הגדרות כלליות ורקע מעבר צבעים PS5 */
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #0b1a30 0%, #003791 35%, #94a3b8 75%, #f1f5f9 100%);
+  background-attachment: fixed;
+  color: #1f2937;
+  margin: 0;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.date-badge {
+  display: inline-block;
+  background: rgba(11, 26, 48, 0.85);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 7px 18px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  margin: 0 0 20px 0;
+}
+
+.reset-btn {
+  float: right;
+  margin: 0 0 20px 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+  background: #0b1a30;
+  border-color: #0070d1;
+  color: #00d4ff;
+}
+
+h2 {
+  clear: both;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  font-size: 2.3rem;
+  margin: 10px 0 25px 0;
+}
+
+h3 {
+  background: rgba(11, 26, 48, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 10px 20px;
+  margin: 10px auto;
+  width: fit-content;
+  max-width: 85%;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+h3[style*="blue"] {
+  color: #38bdf8 !important;
+}
+
+h3[style*="green"] {
+  color: #34d399 !important;
+}
+
+h3[style*="purple"] {
+  color: #c084fc !important;
+}
+
+h3[style*="orange"] {
+  color: #f1f5f9 !important;
+}
+
+/* עיצוב כרטיס מוצר ספציפי במקום כל div באתר */
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  padding: 20px;
+  width: 30%;
+  margin: 1.5%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 55, 145, 0.25);
+  border-color: #0070d1;
+}
+
+.product-card h3 {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 10px 0;
+  font-size: 1.3rem;
+  color: #0b1a30;
+  text-shadow: none;
+  width: 100%;
+  max-width: 100%;
+}
+
+.product-card p:first-of-type {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #64748b;
+  font-size: 0.95rem;
+  text-align: center;
+  line-height: 1.5;
+  margin: 6px auto 14px auto;
+}
+
+img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+  margin: 15px 0;
+}
+
+.product-card p:last-of-type {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #003791;
+  margin: 15px 0 5px 0;
+}
+
+.product-card button {
+  background-color: #0070d1;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 112, 209, 0.25);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin: 4px;
+}
+
+.product-card button:hover {
+  background-color: #003791;
+}
+
+.product-card button:active {
+  transform: scale(0.97);
+}
